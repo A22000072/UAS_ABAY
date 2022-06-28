@@ -108,7 +108,7 @@ if ($_SESSION['level'] == "admin") {
               </div>
 
             <?php
-          } else if ($_SESSION['level'] == "siswa") {
+          } else if ($_SESSION['level1'] == "siswa") {
             ?>
 
               <body>

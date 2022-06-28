@@ -96,7 +96,7 @@ include('koneksi.php'); //agar index terhubung dengan database, maka koneksi seb
               <div class="form-group row align-items-center">
                 <label class="col-md-4 text-md-right text-white">TAHUN MASUK</label>
                 <div class="col-lg-4 col-md-6">
-                  <select class="form-control" name="tahun">
+                  <select class="form-control" name="id_spp">
                     <option value="not_option"> silahkan pilih tahun masuk</option>
                     <?php
                     // jalankan query untuk menampilkan semua data diurutkan berdasarkan

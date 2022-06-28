@@ -52,6 +52,7 @@ CREATE TABLE `mahasiswa` (
   `nama` varchar(20) NOT NULL,
   `id_kelas` int(11) NOT NULL,
   `id_spp` int(11) NOT NULL,
+  `level` set('siswa') NOT NULL,
   PRIMARY KEY (`nim`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -62,7 +63,7 @@ CREATE TABLE `mahasiswa` (
 
 LOCK TABLES `mahasiswa` WRITE;
 /*!40000 ALTER TABLE `mahasiswa` DISABLE KEYS */;
-INSERT INTO `mahasiswa` VALUES ('A123123213','rendi',4,2),('A2.2000014','FauziAbay',1,1),('A2.2000015','Fauzi',2,3),('A2.2000016','Ridwan',3,2);
+INSERT INTO `mahasiswa` VALUES ('1','1',1,1,'siswa'),('A2.2000014','Abay',3,3,'siswa'),('A2.2000015','Gilang',2,2,'siswa'),('A2.2000071','Abay',1,1,'siswa');
 /*!40000 ALTER TABLE `mahasiswa` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -157,4 +158,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-06-28  2:06:38
+-- Dump completed on 2022-06-28  9:48:17

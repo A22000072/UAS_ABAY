@@ -6,10 +6,10 @@ include 'koneksi.php';
 $nim     = $_POST['nim'];
 $nama    = $_POST['nama'];
 $id_kelas   = $_POST['id_kelas'];
-$tahun     = $_POST['tahun'];
+$id_spp     = $_POST['id_spp'];
 
 
-$query = "INSERT INTO mahasiswa VALUES ('$nim','$nama', '$id_kelas', '$tahun')";
+$query = "INSERT INTO mahasiswa VALUES ('$nim','$nama', '$id_kelas', '$id_spp','siswa')";
 $result = mysqli_query($koneksi, $query);
 // periska query apakah ada error
 if (!$result) {
